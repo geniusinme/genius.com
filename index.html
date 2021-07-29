@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>  
+<head>   
+  <title>genius</title>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="genius.css" rel="stylesheet">
+  <body> 
+    <h1>genius</h1> 
+    <div class="dropown">
+      <span onclick="myFunction()" class="dropbtn"> ☰</span>
+      <div id="myDropdown" class="dropdown-content">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+        <h2>education</h2>
+        <a href="jss1.html">jss1</a>
+        <a href="#">jss2</a>
+        <a href="#">jss3</a>
+        <a href="#">ss1</a>
+        <a href="#">ss2</a>
+        <a href="#">ss3/waec</a>
+        <a href=" video.html">video lesson</a>
+        <a href="#">mathematics formulas</a>
+        <a href="#">stories / nove</a>
+        <a href="#">educational news</a>
+        <a href="#">gramatic error</a>
+        <a href="#">teaching (login/sigh required)</a>
+  <H2>Astronomycal</H2>
+        <a href="#">Astronomy</a>
+        <a href="#">planet</a>
+        <a href="#">weather focast</a>
+        
+      <h2>health</h2>
+        
+        <a href="#">health fact</a>
+   
+        <a href="#">biological component</a>
+        <h2>history</h2>
+        <a href="#">biography</a>
+        <a href="#">world war</a>
+        <a href="#">current affairs</a>
+        <h2>children</h2>
+        <a href="#">learn how to read</a>
+        <a href="#">video lesson (for children)</a>
+        <a href="#">games</a>
+        <a href="#">cartoon</a>
+        <a href="#">stories/poem</a>
+        <a href="#">write a story</a>
+        <h2>Teenagers</h2>
+        <a href="#">mathematics encounter</a>
+        <a href="#">films</a>
+        <a href="#">entrepreneur </a>
+        <a href="#">word of advice</a>
+        <a href="#">music</a>
+        <a href="#">bibical</a>
+        <a href="#">stories in bible</a>
+        <a href="#">daily encounter</a>
+        <h2>talent show case</h2>
+       <a href="#">talent show case</a>
+        <h2>more info</h2>
+        <a href="#">about</a>
+        <a href="#">contact</a>
+        <a href="#">support</a>
+        <a href="#">complain</a>
+        <a href="#">handsfree</a> 
+        
+      </div>
+    </div>
+    <script src="genius.js"></script>
+
+ 
+  <link rel="stylesheet" href="pro3.css" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
+  <title>Hamburger menu animation </title>
+</head>
+<body>
+  <div id="menu-bar">
+    <div id="menu"onclick="onClickMenu()">
+      <div id="bar1" class="bar"></div>
+      <div id="bar2" class="bar"></div>
+      <div id="bar3" class="bar"></div>
+    </div>
+    <ul class="nav" id="nav">
+      <li><a href="#he">Home</a></li>
+      
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#">Graphic</a></li>
+      <li><a href="#">Help</a></li>
+      <li><a href="#">terms&condition</a></li>
+    </ul>
+  </div>
+  <div class="menu-bg" id="menu-bg"></div>
+  <script src="scripts.js"></script>
+<img src="download.png">
+<h3>education is the best legacy</h3>
+<img src="download-13.webp">
+<h3>health is wealth</h3>
+<img src="download-8.webp">
+<h3>children are the heritage of the lord</h3>
+<img src="theme4.png">
+<h3>music is all about life</h3>
+<img src="download-7.webp">
+<h3>history is so impotant it help to no mor about life</h3>
+<marquee>   <b>genus</b> talk about, and and make us brilliant</marquee>
+
+   <header></header>
+   <main></main>
+   <footer>
+      <div class="footer-body">
+         <div> genius. </div>
+         <div>
+  <p>genius was a great website created by web-max company to no more</p>
+            <ul>
+               <li><a href="#"> About </a></li>
+               <li><a href="#"> Contact </a></li>
+               <li><a href="#"> Terms & Conditions </a></li>
+               <li><a href="#"> Privacy Policy </a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="footer-copyright">
+         © Copyright 2021. 
+      </div>
+   </footer>
+<script>
+function setCookie(cname,cvalue,exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires=" + d.toGMTString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i]; while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+      
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+  var user=getCookie("username");
+  if (user != "") {alert("Welcome again " + user);
+  } else {
+     user = prompt("Please enter your name:","");
+     if (user != "" && user != null) {
+       setCookie("username", user, 30);
+     }
+  }
+}
+</script> 
+</head>
+
+<body onload="checkCookie()"></body>
+
+  </body>
+</html>
