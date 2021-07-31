@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title> Try It Yourself </title>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+   <style type="text/css">
+      * {
+         box-sizing: border-box;
+      }
+      html, body {
+         margin: 0;
+         padding: 0;
+         outline:none;
+      }
+      .form-container {
+         margin: 20px;
+         padding: 15px;
+         background: #173459;
+         color: white;
+         box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
+      }
+      .input-cnt {
+         display: flex; /* display the icon and the input in a line */
+         margin-bottom: 15px;
+        
+      }
+      .input-cnt:last-child {
+         margin-bottom: 0px;
+      }
+      .input-cnt > i {
+         min-width: 40px; /* set a minimum width for the icon */
+         padding: 10px; /* make sure the icon is centered vertically */
+         text-align: center; /* horizontally center the icon */
+         background: lightgrey;
+         border-top-left-radius: 20px;
+         border-bottom-left-radius: 20px;
+         color: #0076ff;
+      }
+      /* change styles when focused */
+      .input-cnt:hover > i {
+         background: #0076ff;
+         color: white;
+      }
+      /* style the input and textarea */
+      .input-cnt > input[type="text"], .input-cnt > textarea {
+         outline: none;
+         border: none;
+         padding: 10px;
+         border: 1px solid lightgrey;
+         border-top-right-radius: 20px;
+         border-bottom-right-radius: 20px;
+         width: 100%;
+      }
+      /* center textarea icon and increase size */
+      
+     .input-cnt > input[type="email"], .input-cnt > textarea {
+         outline: none;
+         border: none;
+         padding: 10px;
+         border: 1px solid lightgrey;
+         border-top-right-radius: 20px;
+         border-bottom-right-radius: 20px;
+         width: 100%;
+      }
+      
+      .textarea-icon {
+         padding: 60px 10px !important; /* top and bottom paddings are set to 60px */
+      }
+      /* style the submit button */
+      .input-cnt > input[type="submit"] {
+         border: none;
+         border-radius: 20px;
+         outline: none;
+         width: 75%;
+         margin: 0 auto;
+         font-size: 105%;
+         padding: 8px;
+         color: #0076ff;
+         background: white;
+         transition-duration: .5s;
+      }
+      /* add a hover effect for the submit button */
+      .input-cnt > input[type="submit"]:hover {
+         color: white;
+         background: #0076ff;
+      }
+   </style> 
+</head>
+<body>
+   <p><b> Note! </b> This demo requires internet connection. </p>
+   <p><b> This is only a contact form design it has no real functionality. </b> A functionality like this cannot be created without the help of scripting and server-side languages.</p>
+   
+   <h2 style="text-align: center"> Contact Form </h2>
+   <div class="form-container">
+
+      <form action="amosopeyemi920@gmail.com">
+      	
+         <div class="input-cnt">
+            <i class="material-icons">person</i>
+            <input type="text" placeholder="Name" name="name" />
+         </div>
+         
+       <div class="input-cnt">
+            <i class="material-icons">email</i>
+            <input type="email" placeholder="Email" name="email" />
+         </div>
+         
+         <div class="input-cnt">
+            <i class="material-icons textarea-icon">message</i>
+            <textarea placeholder="Your message here..." name="message"></textarea>
+         </div>
+         
+         <div class="input-cnt">
+            <input type="submit" />
+         </div>
+         
+      </form>
+      
+   </div>
+</body>
+</html>

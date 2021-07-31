@@ -1,0 +1,270 @@
+.dropbtn {
+  color: black;
+
+  font-size: 30px;
+  margin: 0;
+  border: none;
+  position: absolute;
+  top: 1px;
+  left: 305px;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+#myInput:focus {
+  outline: 3px solid #ddd;
+}
+
+.dropdown {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  display: inline-block;
+  background-color: black;
+  color: white;
+  overflow: auto;
+  width: 170px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 6px;
+  background-color: #f6f6f6;
+  width: 281px;
+  overflow: auto;
+  background-color: black;
+  border: 1px solid #ddd;
+  z-index: 1;
+  color: white;
+  height: 540px;
+
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin: 0;
+
+}
+
+.dropdown a:hover {
+  background-color: blue;
+}
+
+.show {
+  display: block;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.header {
+  color: white;
+  background-color: black;
+  font-family: serif;
+  margin: 0;
+}
+h1 {
+  color: white;
+  background-color: black;
+  margin: 0;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  display: block;
+
+  font-size: 15px;
+  font-family: consolas;
+
+}
+.nav-bar > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-bar > ul > li > a {
+  padding: 10px;
+  background: black;
+
+}
+.nav-bar > ul > li > a:hover {
+  background: blue;
+  color: #f8f9f9;
+}
+.nav-bar .active {
+  background: red;
+  color: #f8f9f9;
+}
+.nav-bar li {
+  float: left;
+  width: 25%;
+  /* 100% / 4 (number of li elements) = 25% */
+  text-align: center;
+  /* for the borders */
+}
+.nav-bar li:last-child {
+  border-radius: 20px;
+  border: none;
+}
+tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+span {
+  position: absolute;
+  top: 1px;
+  right: 8px;
+  margin: 0;
+
+}
+body {
+  margin: 0;
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+label {
+  border: 2px solid blue;
+  font-size: 17px;
+  margin: 0;
+  border-radius: 5px;
+  width: 59px;
+
+}
+input {
+  border-bottom: 2px solid blue;
+  width: 270px;
+  font-size: 17px;
+  margin: 5px;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  font-family: Trebuchet ms;
+  color: blue;
+
+}
+input:focus {
+  border-bottom: 2px solid red;
+  background-color: gold;
+  border-radius: 10px;
+}
+select {
+  border: 2px solid blue;
+  border-radius: 5px;
+  width: 100px;
+}
+button {
+  border-radius: 7px;
+  margin-top: 3px;
+  color: white;
+  background-color: black;
+  font-size: 15px;
+}
+img {
+  width: 280px;
+  height: 150px;
+  background-color: gold;
+  margin-left:35px;
+  margin-top:50px;
+  border:5px groove gold;
+  border-radius:15px;
+}
+h3{
+  margin-left:30px;
+  margin-right:50px;
+  border:5px solid gold;
+  border-radius:10px;
+}
+marquee {
+  font-size:15px;
+  background-color:gold;
+  color:white;
+}
+
+ * {
+         box-sizing: border-box;
+      }
+      html, body {
+         margin: 0;
+         padding: 0;
+      }
+      body {
+         display: flex;
+         min-height: 100vh;
+         flex-direction: column;
+      }
+      main {
+         flex: 1 0 auto;
+      }
+      footer {
+         color: #fff;
+         background: #333;
+         position: relative; /* required to position the copyright at the bottom */
+         font-size: 80%;
+      }
+      .footer-copyright {
+         width: 100%;
+         height: 40px;
+         background: #111;
+         /* positions the copyright at the bottom of the footer */
+         padding: 10px;
+         position: absolute;
+         bottom: 0px;
+         left: 0px;
+      }
+      .footer-body {
+         margin-bottom: 40px;
+      }
+      /* the clearfix hack */
+      .footer-body::after {
+         content: "";
+         display: block;
+         clear: both;
+      }
+      /* float the divs */
+      .footer-body > div {
+         float: left;
+         padding: 20px;
+      }
+      /* sets the width of the first column */
+      .footer-body > div:first-child {
+         font-size: 150%;
+         width: 35%;
+         text-align: center;
+      }
+      /* sets the width of the second column */
+      .footer-body > div:last-child {
+         width: 65%;
+      }
+      .footer-body ul {
+         list-style-type: none;
+         margin: 0px;
+         padding: 0px;
+         text-align: center;
+      }
+      .footer-body li > a {
+         color: white;
+         text-decoration: none;
+         margin-bottom: 7px;
+      }
